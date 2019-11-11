@@ -1,0 +1,67 @@
+@-webkit-keyframes shineBlue {
+        from { -webkit-box-shadow: 0 0 9px #333; }
+        50% { -webkit-box-shadow: 0 0 18px blue; }
+        to { -webkit-box-shadow: 0 0 9px #333; }
+}
+
+
+
+
+.main_adv1 .input1{
+	width:100%;
+	padding: 1em;
+	border-radius: 10px;
+	
+}
+
+.main_adv1 input1:focus{
+	-webkit-animation-name: shineBlue; 
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite; 
+}
+
+.sb{
+	padding: 1em;
+	background-color: #FFD100;
+}
+
+.sb a{
+	width:90%;
+	margin-top:40px;
+	background-color: black;
+	color: #FFD100;
+	padding:1em;
+}
+
+.sb li{
+	margin-top: 20px;
+}
+/* adaptive style change based on screen width*/
+@media screen and (min-width:60em){
+	.main_adv1{
+		width:40em;
+		padding-right: 1em;
+		float:left;
+	}
+}
+
+@media screen and (max-width:60em) and (min-width:37.5em){
+	
+	.main_adv1{
+		width:100%;
+		height:20em;
+		padding-right: 1em;
+		float:left;
+		
+	}
+}
+
+@media screen and (max-width:37.5em){
+	.main_adv1{
+		width:100%;
+		height:20em;
+		padding-right: 1em;
+		float:left;
+		
+	}
+}

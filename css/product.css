@@ -1,0 +1,270 @@
+/* CSS Document */
+
+@keyframes move_up{
+	0%{
+		top:0px;
+	}
+	1%{
+		top:-210px;
+	}
+	100%{
+		top:-210px;
+	}
+}
+@keyframes move_down{
+	0%{
+		top:-210px;
+	}
+	100%{
+		top:0px;
+	}
+}
+/* animation implementation*/
+.info{
+	position:absolute;
+	width:450px;
+	margin: 0px auto;
+	height:210px;
+	overflow:hidden;
+	padding: 0px auto;
+}
+
+.info .content{
+	height:420px;
+	position:absolute;
+	left:0px;
+}
+
+
+
+.info .content img{
+	width:80%;
+	height:210px;
+	float:left;
+}
+
+.info .content .another{
+	width:80%;
+	height:210px;
+	float:left;
+	background-color:#E7E7E7;
+	padding:1em;
+}
+
+.info .content .another img{
+	height:20px;
+	width:20px;
+	margin-right: 5px;
+}
+/* screen width adaptation*/
+@media screen and (min-width:50em){
+	.car_container{
+	
+	}
+
+	.car_container .left{
+		width:49%;
+		float:left;
+	}
+	.car_container .right{
+		width: 49%;
+		float:right;
+	}
+	.c{
+		margin-top:1em;
+		padding:1em;
+		background-color: white;
+	}
+	
+	.c .a{
+		background-color: #D4002A;
+		color: white;
+		width:100px;
+		padding:1em 3em;
+		margin-top: 0px;
+	}
+	
+	
+}
+
+@media screen and (min-width:35.5em) and (max-width:50em){
+		.car_container{
+	
+	}
+
+	.car_container .left{
+		width:100%;
+		float:left;
+	}
+	.car_container .right{
+		width:100%;
+		float:right;
+	}
+	.c{
+		margin-top:1em;
+		padding:1em;
+		background-color: white;
+	}
+	
+	.info{
+		position:absolute;
+		width:70%;
+		margin: 0px auto;
+		height:210px;
+		overflow:hidden;
+		padding: 0px auto;
+		margin-left: 10%;
+	}
+	
+	.c .a{
+		background-color: #D4002A;
+		color: white;
+		width:100px;
+		padding:1em 3em;
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width:35.5em){
+		.car_container{
+	
+	}
+
+	.car_container .left{
+		width:100%;
+		float:left;
+	}
+	.car_container .right{
+		width: 100%;
+		float:right;
+	}
+	.c{
+		margin-top:1em;
+		padding:1em;
+		background-color: white;
+	}
+	
+	.info{
+		position:absolute;
+		width:400px;
+		margin: 0px auto;
+		height:210px;
+		overflow:hidden;
+		padding: 0px auto;
+		margin-left: 5%;
+	}
+	
+	.c .a{
+		background-color: #D4002A;
+		color: white;
+		width:100px;
+		padding:1em 3em;
+		margin-top: 0px;
+	}
+}
+/* style of table*/
+/* flex layout，realize left and right layout*/
+.tebleOuter{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 60px;
+}
+
+.table{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	color: #222;
+	text-align: left;
+}
+
+.table-left,.table-right{
+	width: 50%;
+}
+
+.table-left{
+	border-right: 3px solid #fff;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width:50em){
+	.table-left{
+		width:100%;
+		border-right: none;
+	}
+}
+
+.table-left .title{
+	font-size: 24px;
+	line-height: 40px;
+	padding-bottom: 30px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.left-price{
+	border-bottom:  1px solid #929292;
+	font-size: 20px;
+	line-height:60px;
+	display: flex;
+}
+
+.left-price .desc{
+	flex: 1;
+	text-align: right;
+}
+
+.left-price.big{
+	font-weight: bolder;
+}
+
+.left-price.big .desc{
+	font-size: 30px;
+}
+
+.table-left .other{
+	font-size: 24px;
+	line-height: 60px;
+	padding-bottom: 20px;
+}
+
+.table-left .used{
+	display: flex;
+	justify-content: space-between;
+}
+
+.table-left .used div{
+	width: 30%;
+	height: 40px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.table-left .offer{
+	color: #666;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: right;
+}
+
+.table-right .title{
+	font-size: 24px;
+	line-height: 40px;
+	padding-bottom: 30px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.right-d{
+	border-bottom: 1px solid #929292;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 10px 0;
+	display: flex;
+}
+
+.right-d .right-right{
+	font-weight: bolder;
+	flex: 1;
+	text-align: right;
+}

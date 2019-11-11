@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta charset="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	<!--use viewport to demonstrate normal size on the phone-->
+	<title>Find your own car!</title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/index.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/product.css">
+	</head>
+
+
+<body style="font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif';">
+		<!--navigation bar-->
+		<div id="navigator">
+			<div class="container">
+				<div class="bar">
+					<div class="text"><a href="index.html"><img src="images/logo.png" alt="LOGO"></a></div>
+					<div class="under"></div>
+				</div>
+				<div class="bar">
+					<div class="text"><a href="index.html">HOME</a></div>
+					<div class="under"></div>
+				</div>
+				<div class="bar">
+					<div class="text"><a href="product.html">PRODUCTS</a></div>
+					<div class="under"></div>
+				</div>
+				<div class="bar">
+					<div class="text"><a href="login.html">LOG IN</a></div>
+					<div class="under"></div>
+				</div>
+				<div class="bar">
+					<div class="text"><a href="signup.html">SIGN UP</a></div>
+					<div class="under"></div>
+				</div>
+			</div>
+		</div>
+	
+	<!--slogan-->
+	<div class="top1">
+		<div class="sub">
+			<h1>Nova Car Guide</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<!--show information of products-->
+	<div class="car_container">
+		<div class="left">
+			<div class="c">
+				<h2>Economy Manual</h2>
+				<h4>Group A - Holden Barina or similar</h4>
+				<button style="border-style: none;color:red;text-decoration: underline;background-color: transparent;" onclick="move1()">Show Details ⇣</button>
+				<div style="height:220px;">
+				<div class="info">
+					<div class="content" id="c1">
+						<img src="images/2018 (6).png" alt="car_1">
+						<div class="another">
+							<p><img src="images/door.jpg" alt="door">3 Doors</p>
+							<p><img src="images/peo.jpg" alt="Seats">4 Seats</p>
+							<p><img src="images/drive.jpg" alt="drive">Manual</p>
+							<p><img src="images/bag.jpg" alt="bag">1 Large Bag</p>
+							<h5>Bluetooth, USB Connector</h5>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div style="height:20px;"></div>
+				<a class="a">Reserve</a>
+				<p style="margin-top: 30px;"></p>
+				<a style="margin-top:30px;color: red; text-decoration: underline;" href="login.html">Log in to get more information</a>
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="c">
+				<h2>Compact</h2>
+				<h4>Group B - Kia Rio or similar</h4> <!--handing the animation after clicking event-->
+				<button style="border-style: none;color:red;text-decoration: underline;background-color: transparent;" onclick="move2()">Show Details ⇣</button>
+				<div style="height:220px;">
+				<div class="info">
+					<div class="content" id="c2">
+						<img src="images/2018 (1).png" alt="car_1">
+						<div class="another">
+							<p><img src="images/door.jpg" alt="door">5 Doors</p>
+							<p><img src="images/peo.jpg" alt="Seats">5 Seats</p>
+							<p><img src="images/drive.jpg" alt="drive">Automatic</p>
+							<p><img src="images/bag.jpg" alt="bag">1 Large Bag</p>
+							<h5>4 Cylinders, Bluetooth, USB Connector</h5>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div style="height:20px;"></div>
+				<a class="a">Reserve</a>
+				<p style="margin-top: 30px;"></p>
+				<a style="margin-top:30px;color: red; text-decoration: underline;" href="login.html">Log in to get more information</a> <!--jump to the login page-->
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="car_container">
+		<div class="left">
+			<div class="c">
+				<h2>Intermediate</h2>
+				<h4>Group C - Hyundai i30 Active Hatch or similar</h4>
+				<button style="border-style: none;color:red;text-decoration: underline;background-color: transparent;" onclick="move3()">Show Details ⇣</button>
+				<div style="height:220px;">
+				<div class="info">
+					<div class="content" id="c3">
+						<img src="images/2018 (2).png" alt="car_1">
+						<div class="another">
+							<p><img src="images/door.jpg" alt="door">5 Doors</p>
+							<p><img src="images/peo.jpg" alt="Seats">5 Seats</p>
+							<p><img src="images/drive.jpg" alt="drive">Automatic</p>
+							<p><img src="images/bag.jpg" alt="bag">1 Large Bag</p>
+							<h5>4 Cylinders, Bluetooth, Reversing Camera, USB Connector</h5>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div style="height:20px;"></div>
+				<a class="a">Reserve</a>
+				<p style="margin-top: 30px;"></p>
+				<a style="margin-top:30px;color: red; text-decoration: underline;" href="login.html">Log in to get more information</a>
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="c">
+				<h2>Standard</h2>
+				<h4>Group D - Toyota Corolla Ascent Sedan or similar</h4>
+				<button style="border-style: none;color:red;text-decoration: underline;background-color: transparent;" onclick="move4()">Show Details ⇣</button>
+				<div style="height:220px;">
+				<div class="info">
+					<div class="content" id="c4">
+						<img src="images/2018 (3).png" alt="car_1">
+						<div class="another">
+							<p><img src="images/door.jpg" alt="door">4 Doors</p>
+							<p><img src="images/peo.jpg" alt="Seats">5 Seats</p>
+							<p><img src="images/drive.jpg" alt="drive">Manual</p>
+							<p><img src="images/bag.jpg" alt="bag">2 Large Bags</p>
+							<h5>4 Cylinders, Bluetooth, Reversing Camera, USB Connector</h5>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div style="height:20px;"></div>
+				<a class="a">Reserve</a>
+				<p style="margin-top: 30px;"></p>
+				<a style="margin-top:30px;color: red; text-decoration: underline;" href="login.html">Log in to get more information</a>
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="car_container">
+		<div class="left">
+			<div class="c">
+				<h2>Full Size</h2>
+				<h4>Group E - Toyota Camry or similar</h4>
+				<button style="border-style: none;color:red;text-decoration: underline;background-color: transparent;" onclick="move5()">Show Details ⇣</button>
+				<div style="height:220px;">
+				<div class="info">
+					<div class="content" id="c5">
+						<img src="images/2018 (4).png" alt="car_1">
+						<div class="another">
+							<p><img src="images/door.jpg" alt="door">4 Doors</p>
+							<p><img src="images/peo.jpg" alt="Seats">5 Seats</p>
+							<p><img src="images/drive.jpg" alt="drive">Automatic</p>
+							<p><img src="images/bag.jpg" alt="bag">2 Large Bags</p>
+							<h5>4/6 Cylinders, Bluetooth, USB Connector, Reversing Camera</h5>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div style="height:20px;"></div>
+				<a class="a">Reserve</a>
+				<p style="margin-top: 30px;"></p>
+				<a style="margin-top:30px;color: red; text-decoration: underline;" href="login.html">Log in to get more information</a>
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="c">
+				<h2>Eco-Friendly</h2>
+				<h4>Group L - Toyota Camry Hybrid or similar</h4>
+				<button style="border-style: none;color:red;text-decoration: underline;background-color: transparent;" onclick="move6()">Show Details ⇣</button>
+				<div style="height:220px;">
+				<div class="info">
+					<div class="content" id="c6">
+						<img src="images/2018 (5).png" alt="car_1">
+						<div class="another">
+							<p><img src="images/door.jpg" alt="door">4 Doors</p>
+							<p><img src="images/peo.jpg" alt="Seats">5 Seats</p>
+							<p><img src="images/drive.jpg" alt="drive">Manual</p>
+							<p><img src="images/bag.jpg" alt="bag">2 Large Bags</p>
+							<h5>4 Cylinders, Electric / Gas, Bluetooth, USB Connector, Reversing Camera</h5>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div style="height:20px;"></div>
+				<a class="a">Reserve</a>
+				<p style="margin-top: 30px;"></p>
+				<a style="margin-top:30px;color: red; text-decoration: underline;" href="login.html">Log in to get more information</a>
+				<div style="height:20px;"></div>
+			</div>
+		</div>
+	</div>
+		
+	
+	
+	</div>
+	
+	<script>
+		//method of executing animation
+		function move1(){
+			var c=document.getElementById("c1");
+			var t=c.style.animation;
+			if(t==""){
+				c.style.animation="move_up 100s";
+			}else if(t=="100s ease 0s 1 normal none running move_up"){
+				c.style.animation="move_down 1s";
+			}else if(t=="1s ease 0s 1 normal none running move_down"){
+				c.style.animation="move_up 100s";
+			}
+		}
+		function move2(){
+			var c=document.getElementById("c2");
+			var t=c.style.animation;
+			if(t==""){
+				c.style.animation="move_up 100s";
+			}else if(t=="100s ease 0s 1 normal none running move_up"){
+				c.style.animation="move_down 1s";
+			}else if(t=="1s ease 0s 1 normal none running move_down"){
+				c.style.animation="move_up 100s";
+			}
+		}
+		function move3(){
+			var c=document.getElementById("c3");
+			var t=c.style.animation;
+			if(t==""){
+				c.style.animation="move_up 100s";
+			}else if(t=="100s ease 0s 1 normal none running move_up"){
+				c.style.animation="move_down 1s";
+			}else if(t=="1s ease 0s 1 normal none running move_down"){
+				c.style.animation="move_up 100s";
+			}
+		}
+		function move4(){
+			var c=document.getElementById("c4");
+			var t=c.style.animation;
+			if(t==""){
+				c.style.animation="move_up 100s";
+			}else if(t=="100s ease 0s 1 normal none running move_up"){
+				c.style.animation="move_down 1s";
+			}else if(t=="1s ease 0s 1 normal none running move_down"){
+				c.style.animation="move_up 100s";
+			}
+		}function move5(){
+			var c=document.getElementById("c5");
+			var t=c.style.animation;
+			if(t==""){
+				c.style.animation="move_up 100s";
+			}else if(t=="100s ease 0s 1 normal none running move_up"){
+				c.style.animation="move_down 1s";
+			}else if(t=="1s ease 0s 1 normal none running move_down"){
+				c.style.animation="move_up 100s";
+			}
+		}
+		function move6(){
+			var c=document.getElementById("c6");
+			var t=c.style.animation;
+			if(t==""){
+				c.style.animation="move_up 100s";
+			}else if(t=="100s ease 0s 1 normal none running move_up"){
+				c.style.animation="move_down 1s";
+			}else if(t=="1s ease 0s 1 normal none running move_down"){
+				c.style.animation="move_up 100s";
+			}
+		}
+	
+	</script>
+</body>
+</html>
